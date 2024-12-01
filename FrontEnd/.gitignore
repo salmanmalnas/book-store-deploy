@@ -34,7 +34,7 @@ public/
 .cache/
 
 # Static files (if you want to ignore CSS, minified CSS, and map files)
-*.css
+!src/index.css
 *.min.css
 *.map
 

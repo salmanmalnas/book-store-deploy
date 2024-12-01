@@ -3,11 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  css: {
-    preprocessorOptions: {
-      css: {
-        charset: false,
-      },
-    },
+  resolve: {
+    extensions: ['.js', '.jsx', '.css'], // Add extensions
   },
 });
