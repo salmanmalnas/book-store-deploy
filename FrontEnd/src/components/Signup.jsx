@@ -21,7 +21,7 @@ function Signup() {
     };
 
     try {
-      const res = await axios.post("http://localhost:4004/user/signup", userinfo);
+      const res = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/user/signup`, userinfo);
       toast.success("Signup Successful");
       navigate(from, { replace: true });
 

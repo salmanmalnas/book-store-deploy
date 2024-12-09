@@ -10,7 +10,7 @@ function Freebook() {
   useEffect(()=>{
     const getBook= async () => {
       try{
-        const res = await axios.get("http://localhost:4004/book");
+        const res = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/book`);
         setBook(res.data)
       } catch(error){
         console.log("Error from get : ", error.response || error.message || error)
