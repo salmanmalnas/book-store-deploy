@@ -10,7 +10,7 @@ function Freebook() {
   useEffect(()=>{
     const getBook= async () => {
       try{
-        const res = await axios.get("https://book-store-deploy-backend.onrender.com/book");
+        const res = await axios.get("http://localhost:4004/book");
         setBook(res.data)
       } catch(error){
         console.log("Error from get : ", error.response || error.message || error)
@@ -85,4 +85,4 @@ function Freebook() {
   )
 }
 
-export default Freebook;
+export default Freebook

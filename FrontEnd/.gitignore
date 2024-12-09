@@ -33,8 +33,8 @@ public/
 # Parcel
 .cache/
 
-# Static files (if you want to ignore CSS, minified CSS, and map files)
-!src/index.css
+# Static files
+*.css
 *.min.css
 *.map
 
@@ -56,5 +56,8 @@ public/
 *.sw?
 
 # Miscellaneous
+node_modules/
+dist/
+coverage/
 *.env
 *.local
